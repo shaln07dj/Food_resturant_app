@@ -7,14 +7,19 @@ import productSlice, { productFetch } from './slice/ProductsSlice';
 import {configureStore} from '@reduxjs/toolkit';
 import {Provider} from 'react-redux';
 import cartSlice, { getTotal } from './slice/cartSlice';
+import LoginUserSlice from './slice/UserSlice'
+
 const store= configureStore({
   reducer:{
     productSlice,
-    cart:cartSlice
+    cart:cartSlice,
+    user:LoginUserSlice,
+    
   }
 })
 store.dispatch(productFetch());
 store.dispatch(getTotal());
+
 
 ReactDOM.render(
   <Provider store={store}>

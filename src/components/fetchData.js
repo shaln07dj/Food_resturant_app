@@ -1,9 +1,9 @@
-import React from "react";
+import React,{useState} from "react";
 import Zoom from 'react-reveal/Zoom';
 import { useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from "react-redux";
 import { addToCart } from "../slice/cartSlice";
-import productSlice from '../slice/ProductsSlice';
+
 const FetchData=()=>{
     const {items,status,error} = useSelector(state=> state.productSlice);
     const dispatch = useDispatch()
@@ -24,7 +24,8 @@ function handleAddToCart(product){
     console.log("Added")
   
 }
-
+var lcc=localStorage.getItem("User")
+console.log(lcc)
 let newarr=[]
 newarr=items.filter((item,index)=>{
     return (item.img=="https://user-images.githubusercontent.com/77019950/142701250-a7fcc935-3801-4f0b-aed3-8e884f171caf.jpg"||item.img=="https://user-images.githubusercontent.com/77019950/142701251-cf51b440-cd33-48e6-a386-580a36af0ebd.jpg")
@@ -48,7 +49,7 @@ console.log(newarr)
       
                 <div key={item.id} class="col-sm" style={{border:"none"}}> 
                  <div className="card"  style={{height:"600px",width:"400px",backgroundImage: "url(" + item.img + ")",backgroundPosition:"center",backgroundRepeat:"none"}}>
-                 {/* <img src={item.img} style={{marginTop:"0px", height:"600px", width:"400px"}}></img>*/}
+                
                   <div className="overlay"></div>
                   <div className="card-body">
                           <h2 className="card-title">{item.name}</h2>

@@ -6,6 +6,7 @@ import image from "./images/turkish-table.png";
 import about_image1  from "./images/menu-item-06.jpg";
 import about_image2  from "./images/menu-item07.jpg";
 import about_image3  from "./images/menu-item-03.jpg";
+import { Link } from 'react-router-dom';
 
 
 function Home() {
@@ -109,8 +110,8 @@ function Home() {
                     </div>
                     <div className="btnl">
                         <br />
-                        <a className="btn btn-primary btn-mg" href="#product" role="button">Products</a>
-                        <a className="btn btn-primary btn-mg" href="#service" role="button">Services</a>
+                       <Link to='/menu'><a className="btn btn-primary btn-mg" href="#product" role="button">Products</a></Link> 
+                        
                     </div>
 
                 </div>

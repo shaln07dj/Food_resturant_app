@@ -5,6 +5,7 @@ import { useSelector,useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { removeFromCart,decreaseCart, addToCart, clearCart, getTotal } from '../slice/cartSlice';
 
+
 const Carts=()=>{
     const cart=useSelector((state)=>state.cart);
     const dispatch=useDispatch()
@@ -80,8 +81,8 @@ const Carts=()=>{
                             <span>subtotal</span>
                             <span className="amount">₹ {parseInt(cart.cartTotalAmount)}</span>
                         </div>
-                        <p>Checkout</p>
-                        <button className="btn btn-primary">Check Out</button>
+                        
+                        <Link className="nav-link" to='/checkout'><button className="btn btn-primary">Check Out</button></Link>
                         <div className="continue-shopping">
                     <Link to='/menu'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">

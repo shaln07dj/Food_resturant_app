@@ -18,6 +18,7 @@ a {
   text-decoration: none !important;
 }
 
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -50,6 +51,38 @@ p {
   position: fixed;
   box-shadow: 0px 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   z-index: 2;
+}
+.profileTextImage {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 2rem;
+  z-index: -1;
+  height: 2rem;
+  border-radius: 50%;
+  background: #eb0808;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  line-height: 2rem;
+  margin: 0rem 0 0 2rem;
+}
+
+.profileTextImage1{
+  font-family: Arial, Helvetica, sans-serif;
+  width: 2rem;
+  z-index: -1;
+  height: 2rem;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  line-height: 2rem;
+  margin: 0rem 0 0 2rem;
+}
+
+.login_container{
+  display: flex;
+justify-content: center;
 }
 .alert {
   height: 40px;
