@@ -24,6 +24,8 @@ const Login = () => {
 }
 const dispatch = useDispatch()
 const navigate=useNavigate()
+var user=localStorage.getItem("User")
+console.log(user)
 
 
 
@@ -36,11 +38,14 @@ const navigate=useNavigate()
  
 ).then(res=>{console.log(res.data)
   dispatch(loginUserDetails(res.data))
+
   navigate('/cart')
   localStorage.setItem("Token",JSON.stringify(res.data.access))
   setbarToken(localStorage.getItem("Token"))
+  toast.success(`Hello,${res.data.name} you are logged In ...!`,{
+    position:"bottom-left"
+});
   
-
 })}
 catch( error) {
  

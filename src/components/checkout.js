@@ -3,6 +3,7 @@ import { useState } from "react";
 import Fade from "react-reveal/Fade";
 import { useNavigate } from "react-router-dom";
 import { useSelector,useDispatch } from 'react-redux'
+import { toast } from "react-toastify";
 import axios from "axios";
 
 export const CheckOut = () => {
@@ -30,7 +31,9 @@ console.log(cart)
       console.log("Clicked")
       console.log(login)
       if (login==='false'){
-          alert("You Are Not Logged In")
+        toast.error( 'you are not logged...!',{
+          position:"bottom-left"
+      });
         navigate ('/login')
 
       }

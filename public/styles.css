@@ -84,18 +84,7 @@ p {
   display: flex;
 justify-content: center;
 }
-.alert {
-  height: 40px;
-  width: 100%;
- 
-  background-color: #000;
-}.alert  {
-  
-  text-align: center;
-  text-decoration: none ;
-  margin-top: 30px;
-  color: #fff;
-}
+
 .home-img{
   width:600px;
   height:480px;
@@ -112,15 +101,6 @@ justify-content: center;
   visibility: hidden;
 
  }
- .card1{
-   display: none;
-   visibility: hidden;
-   opacity: 0;
- }
- #this{
-   display: none;
- }
-
 
 
 .a-style
@@ -129,6 +109,7 @@ justify-content: center;
   text-decoration: underline;
 }
   a{
+    color: #eb0808;
   text-decoration: none;
 }
 a:hover{
@@ -177,35 +158,14 @@ background-repeat: no-repeat;
 background-size: cover;
  
 }
-#products{
-  background-image: url(..src/images/banner.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-}
-#service-01{
-  background-image: url(./images/slider-01.jpg);
-background-repeat: no-repeat;
-background-size: cover;
 
-}
-#service-02{
-  background-image: url(./images/blog_bg.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-
-}
 #contact_us_form{
   background-image: url(./images/about-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   
   }
-.service-blog{
-  color: #FFF;
-}
-#service2{
-  margin:50px 0px 0px 0px;
-}
+
 .jumbotron{
   background-color: #FFF;
 }
@@ -271,8 +231,6 @@ background-size: cover;
 }
 /* About Area Ends */
 
-
-
 .row
 { margin-top: 20px;
   color: #000;
@@ -308,7 +266,7 @@ hr{
     border: 1px solid #CCC;
     border-radius: 15px;
    box-shadow: 2px 5px 5px 2px rgba(0,0,0,0.5);
-  /* box-shadow: 0px 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
+  
 
     text-align: center;
     padding: 0;
@@ -396,39 +354,6 @@ hr{
                
               }
               
-              
-             
-              .card .avatar {
-                margin-top: 0%;
-                position: absolute;
-                margin-top: 15px;
-              z-index: 2;
-                float: right;
-              }
-              .card .avatar img {
-                width: 100px;
-                height: 100px;
-                -webkit-border-radius: 50%;
-                -moz-border-radius: 50%;
-                border-radius: 50%;
-                border: 3px solid rgba(0,0,30,0.7);
-              }
-              /*.card-body{
-                  background-color: #eb0808;
-                  
-                  bottom: 0;
-                  
-                  
-                  
-              }
-              .card-body:hover{
-                background-color: #eb0808;
-                height: 100%;
-                opacity: 0.6;
-                
-                
-                
-            }*/
 
 
             .overlay
@@ -489,162 +414,6 @@ hr{
 }
 
 
-/*new card*/
-
-
-.card-rev {
-  overflow: hidden;
-  position: relative;
-  width: 25rem;
-  
-  
-  border: 1px solid #CCC;
-  border-radius: 15px;
- box-shadow: 2px 5px 5px 2px rgba(0,0,0,0.5);
-/* box-shadow: 0px 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
-
-  text-align: center;
-  padding: 0;
-  background-color: #ccc;
-  color: rgb(136, 172, 217);
-}
-.card-rev:hover{
-box-shadow: 0px 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-.card-rev{
-  color: #2a2a2a;
-  height: 250px;
-
-border-radius: 15px;
-  
-position: relative;
-display: flex;
-align-items: flex-end;
-transition: 0.4s ease-out;
-box-shadow: 0px 7px 10px rgba(black, 0.5);
-}
-.card-rev:hover{
-  transform: translateY(-20px);}
-  .card-rev::before{
-    opacity: 1;
-  
-    opacity: 1;
-    transform: translateY(0px);}
-
-.card-rev::before{
-  content: "";
-  position: absolute;
-
-  top: 0;
-  left: 0;
-  display: block;
-  width: 25rem;
-  height: 100%;
-  border-radius: 15px;
-  background: rgba(black, 0.6);
-  z-index: 2;
-  transition: 0.5s;
-  opacity: 0;
-}
-
-
-
-
-.card-rev .header-bg {
-  /* This stretches the canvas across the entire hero unit */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
-  border-bottom: 1px #FFF solid;
-  /* This positions the canvas under the text */
-  z-index: 1;
-               /* background-image: url(./greets.jpg);
-                background-size: cover;
-               
-                height: 500px;*/
-            }
-            .btn{
-              background-color: #eb0808
-            }
-            .btn:hover{
-              background-color:#fff;
-              color: #000;
-            }
-            .main{
-              
-             
-             width: 80%;
-             margin-left: auto;
-             margin-right: auto;
-        
-            }
-            
-
-            .card-rev-img-top{
-              height: 500px;
-             
-            }
-            
-            
-
-            .card-rev .avatar {
-              position: relative;
-              margin-top: 15px;
-              z-index: 100;
-            }
-            .card-rev .avatar img {
-              width: 100px;
-              height: 100px;
-              -webkit-border-radius: 50%;
-              -moz-border-radius: 50%;
-              border-radius: 50%;
-              border: 5px solid rgba(0,0,30,0.8);
-            }
-            /*.card-rev-body{
-                background-color: #eb0808;
-                
-                bottom: 0;
-                
-                
-                
-            }
-            .card-rev-body:hover{
-              background-color: #eb0808;
-              height: 100%;
-              opacity: 0.6;
-              
-              
-              
-          }*/
-
-
-          .overlay
-{
-width:100%;
-height: 100%;
-position: absolute;
-top:0;	
-border-radius: 7px;
-cursor: pointer;
-background: linear-gradient(rgba(0,0,0,0.5),#eb0808);
-opacity: 0;
-transform: .4s;
-}
-.card-rev:hover .overlay{
-opacity: 1;
-}
-.card-rev-body
-{
-width: 100%;
-position :absolute;
-bottom: 0;
-left:50%;
-opacity: 0;
-transform: translateX(-50%);
-transition: 1s;
-}
 hr{
 background: #fff;
 height: 2px;
@@ -652,39 +421,13 @@ border:0;
 margin:15px auto;
 width:60%;
 }
-.card-rev-body p{
-text-align: left;
-
-font-size: 14px;
-color: #fff;
-}
-.card-rev-body-a{
-margin-left: 0;
-}
-.card-rev-body.btn {
-float: left;
-}
-.card-rev:hover .card-rev-body{
-bottom: 40%;
-opacity: 1;
-}
 
 
 
     /*--Services*/
-    #service {
-		width:100%;
-		padding:70px 0;
-		background:#efefef;
-}
 
-.service-box{
-	width:80%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	margin:auto;
-}
+
+
  .card{
 	flex-basis:48%;
 	text-align:center;
@@ -697,21 +440,7 @@ opacity: 1;
 width: 100%;
 border-radius: 7px;
 }
-.overlay
-{
-	width:100%;
-	height: 100%;
-	position: absolute;
-	top:0;	
-	border-radius: 7px;
-	cursor: pointer;
-	background: linear-gradient(rgba(0,0,0,0.5),#eb0808);
-	opacity:0;
-	transform: 1s;
-}
- .card:hover .overlay{
-	opacity: 1;
-}
+
  .card-body
 {
 	width:80%;
@@ -747,19 +476,9 @@ hr{
  }
 
     /*--Services*/
-    #service {
-		width:100%;
-		padding:70px 0;
-		background:#fff;
-}
 
-.service-box{
-	width:80%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	margin:auto;
-}
+
+
  .card{
    width: 15rem;
 	flex-basis:48%;
@@ -775,18 +494,7 @@ hr{
 width: 100%;
 border-radius: 7px;
 }
-.overlay
-{
-	width:100%;
-	height: 100%;
-	position: absolute;
-	top:0;	
-	border-radius: 7px;
-	cursor: pointer;
-	background: linear-gradient(rgba(0,0,0,0.5),#eb0808);
-	opacity: 0;
-	transform: 1s;
-}
+
  .card:hover .overlay{
 	opacity: 1;
 }
@@ -826,24 +534,9 @@ hr{
 	bottom: 40%;
 	opacity: 1;
 }
-.card-rev{
-  color: #2a2a2a;
-
-border-radius: 15px;
-  width: 20rem;
-position: relative;
-display: flex;
-align-items: flex-end;
-transition: 0.4s ease-out;
-box-shadow: 0px 7px 10px rgba(black, 0.5);
-}
 
 
 
-
-
-  
-  
                /* 
 ---------------------------------------------
 reservation
@@ -997,11 +690,11 @@ reservation
   padding: 20px;
 }
 
-.contact-form ::-webkit-input-placeholder { /* Edge */
+.contact-form ::-webkit-input-placeholder { 
   color: #2a2a2a;
 }
 
-.contact-form :-ms-input-placeholder { /* Internet Explorer 10-11 */
+.contact-form :-ms-input-placeholder { 
   color: #2a2a2a;
 }
 
@@ -1029,79 +722,6 @@ reservation
 }
 
 
-
-            
-footer {
-  margin-top: 60px;
-  padding: 50px 0px;
-  background-color: #eb0808;
-}
-
-footer .left-text-content p {
-  margin-top: 5px;
-  color: #fff;
-  font-size: 14px;
-  text-align: right;
-}
-
-footer .right-text-content p {
-  color: #fff;
-  font-size: 14px;
-  margin-right: 15px;
-  text-transform: uppercase;
-}
-
-
-footer .right-text-content {
-  text-align: left;
-  margin-top: 10px;
-}
-
-footer .logo {
-  text-align: center;
-}
-
-footer .right-text-content ul li {
-  display: inline-block;
-  margin-left: 15px;
-}
-footer .right-text-content ul li:first-child {
-  margin-left: 0px;
-}
-
-
-footer .right-text-content ul li a {
-  width: 44px;
-  height: 44px;
-  display: inline-block;
-  text-align: center;
-  line-height: 44px;
-  font-size: 20px;
-  background-color: #fff;
-  border-radius: 50%;
-  color: #eb0808;
-  -webkit-transition: all 0.5s ease 0s;
-  -moz-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-}
-
-footer .right-text-content ul li a:hover {
-  color: #2a2a2a;
-}
-.logo{
-  font-family:'Dancing Script', cursive;
-  font-size: 25px;
-  text-align: center;
-  color: #fff;
-}
-.logo-1{
-  font-family:'Dancing Script', cursive;
-  font-size: 16px;
-  text-align: center;
-  color: #0000;
-
-}
 /*-------------Responsive 
                           --------*/
                         
@@ -1148,8 +768,6 @@ footer .right-text-content ul li a:hover {
 		bottom: 25% !important;
 	}
 }
-
-
 
 
 @media only screen and (max-width:770px)
@@ -1204,18 +822,7 @@ footer .right-text-content ul li a:hover {
     
     height:250px;
   }
-  .card-rev-body
-  {
-    margin-left:10px;
-  width: 100%;
 
-  position :absolute;
-  bottom: 0;
-  left:48%;
-  opacity: 0;
-  transform: translateX(-50%);
-  transition: 1s;
-  }
   
   
 
@@ -1257,115 +864,7 @@ footer .right-text-content ul li a:hover {
       margin-left: 0px;
       margin-top: 30px;
     }
-    #offers .tabs-content .left-list {
-      margin-right: 0px;
-    }
-  
-    #offers .tabs-content .right-list {
-      margin-left: 0px;
-    }
-    footer .right-text-content {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    footer .left-text-content p {
-      text-align: center;
-      margin-top: 30px;
-    }
-  }
-  
-  
-  
-  
-  
-  #preloader {
-    overflow: hidden;
-    background-color: #eb0808;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    position: fixed;
-    z-index: 99999;
-    color: #fff;
-  }
-  
-  #preloader .jumper {
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
-    position: absolute;
-    margin: auto;
-    width: 50px;
-    height: 50px;
-  }
-  
-  #preloader .jumper > div {
-    background-color: #fff;
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    position: absolute;
-    opacity: 0;
-    width: 50px;
-    height: 50px;
-    -webkit-animation: jumper 1s 0s linear infinite;
-    animation: jumper 1s 0s linear infinite;
-  }
-  
-  #preloader .jumper > div:nth-child(2) {
-    -webkit-animation-delay: 0.33333s;
-    animation-delay: 0.33333s;
-  }
-  
-  #preloader .jumper > div:nth-child(3) {
-    -webkit-animation-delay: 0.66666s;
-    animation-delay: 0.66666s;
-  }
-  .logo{
-    font-family:'Dancing Script', cursive;
-    font-size: 25px;
-    text-align: center;
-    color: #fff;
-  }
-  .logo-1{
-    font-family:'Dancing Script', cursive;
-    font-size: 16px;
-    text-align: center;
-    color: #0000;
-  
-  }
-  @-webkit-keyframes jumper {
-    0% {
-      opacity: 0;
-      -webkit-transform: scale(0);
-      transform: scale(0);
-    }
-    5% {
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-      opacity: 0;
-    }
-  }
-  
-  @keyframes jumper {
-    0% {
-      opacity: 0;
-      -webkit-transform: scale(0);
-      transform: scale(0);
-    }
-    5% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
+ 
+ 
+ 
   

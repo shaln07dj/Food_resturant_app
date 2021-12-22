@@ -13,7 +13,7 @@ import Contact from './components/Contact';
 import FetchData from './components/fetchData';
 import Carts from './components/Carts';
 import Login from './components/Login';
-import { SinghUP } from './components/Signup';
+import { SignUP } from './components/Signup';
 import { CheckOut } from './components/checkout';
 
 
@@ -38,7 +38,7 @@ function App() {
       <Route path ="/cart" element={<Carts/>}/>
       <Route path='/contact-us' element={<Contact/>}/>
       <Route path='/login' element={<Login/>}/>
-      <Route path='/signup' element={<SinghUP/>}/>
+      <Route path='/signup' element={<SignUP/>}/>
       <Route path='/checkout'element={<CheckOut/>}/>
 
       

@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 
-export const SinghUP=()=>{
+export const SignUP=()=>{
     const [name,setName]=useState("")
     const [username,setUsername]=useState("")
     const[email,setEmail]=useState("")
@@ -44,7 +44,7 @@ export const SinghUP=()=>{
       
       }
     return(
-        <diV>
+        <div>
             <Fade>
             <div className="jumbotron jumbotron-fluid" >
             
@@ -100,6 +100,6 @@ export const SinghUP=()=>{
          
           </div>
         </Fade>
-        </diV>
+        </div>
     )
 }
