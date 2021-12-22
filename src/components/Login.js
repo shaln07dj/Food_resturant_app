@@ -5,7 +5,7 @@ import { loginUserDetails, } from '../slice/UserSlice';
 import { toast } from "react-toastify";
 import Fade from 'react-reveal/Fade';
 import  axios  from 'axios';
-import { table_reservation_image} from"./images";
+
 
 
 const Login = () => {
@@ -48,7 +48,7 @@ console.log(user)
   
 })}
 catch( error) {
- 
+     
   if (error.response.status===401){
     console.log(error.response.status)
     
@@ -58,6 +58,9 @@ catch( error) {
   navigate('/login')
 
   }
+
+
+
 };
   
   }

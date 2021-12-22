@@ -2,6 +2,9 @@ import React from "react";
 import{ useState} from 'react'
 import Fade from 'react-reveal/Fade';
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import { useDispatch } from 'react-redux';
+import { loginUserDetails, } from '../slice/UserSlice';
 import axios from "axios";
 
 
@@ -10,6 +13,7 @@ export const SignUP=()=>{
     const [username,setUsername]=useState("")
     const[email,setEmail]=useState("")
     const [password,setPassword]=useState("")
+    const dispatch=useDispatch()
     const navigate=useNavigate()
 
     const request = {
@@ -26,7 +30,10 @@ export const SignUP=()=>{
         await axios('http://localhost:8000/api/users/register/',request
      
     ).then(res=>{console.log(res.data)
-     
+      dispatch(loginUserDetails(res.data))
+      toast.success(`Welcome,${res.data.name}...!`,{
+        position:"bottom-left"
+    });
       navigate('/cart')
   
       
